@@ -40,6 +40,7 @@
 					</group>
 					<group>
 						<field name="name" string="Tên Phòng"/>
+						<field name="manager" string="Trưởng phòng"/>
 					</group>
 				</group>
 				</form>
@@ -72,6 +73,7 @@
 					<field name="manhanvien" string="Mã nhân viên"/>
 					<field name="tennhanvien" string="Tên nhân viên"/>
 					<field name="sdt" string="SĐT"/>
+					 <field name="gender" string="Giới tính"/>
 						<field name="phongban" string="Phòng ban"/>
 				</search>
 			</field>
@@ -87,7 +89,9 @@
 					<field name="manhanvien" />
 					<field name="tennhanvien" />
 					<field name="sdt" />
+					 <field name="gender" string="Giới tính"/>
 					<field name="phongban" />
+					
 				</tree>
 			</field>
 		</record>
@@ -105,8 +109,12 @@
 					</group>
 					<group>
 						<field name="tennhanvien" string="Tên nhân viên"/> 
-						<field name="sdt" string="SĐT"/>
+						 <field name="gender" string="Giới tính"/>
 						<field name="phongban" string="Phòng ban"/>
+					</group >
+					<group string="Thông tin liên lạc" >
+						<field name="sdt" string="SĐT"/>
+						<field name="address" string="Địa chỉ"/>
 					</group>	
 				</group>				
 				</form>

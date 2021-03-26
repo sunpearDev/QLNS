@@ -10,7 +10,7 @@
     "depends":["base"],#khai bao nhung module lien quan
     "init_xml":[],
     "demo_xml":[],
-    "update_xml":["quanlyns_view.xml","quanlyns_menu.xml"],
+    "update_xml":["quanlyns_view.xml","quanlyns_menu.xml","quanlyns_demo.xml"],
     "active":False,
     "installable":True,
 }
