@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+	<data noupdate="1">
+		<!--quanlyhps-->
+		<record id="quanlyns_01" model="quanlyns.nhanvien">
+                    <field name="manhanvien">01</field>
+					<field name="tennhanvien">Nguyễn Văn A</field>
+					<field name="sdt">012345678 </field>
+					 <field name="gender">nam</field>
+                     <field name="address">180 Cao Lỗ</field>
+		</record>
+		<record id="quanlyns_00" model="quanlyns.phongban">
+					<field name="ids" string="Mã phòng"/>
+					<field name="name" string="Tên Phòng"/>
+					<field name="manager" string="Trưởng phòng"/>
+                    <field name="manhanvien">01</field>
+					<field name="tennhanvien">Nguyễn Văn A </field>
+					<field name="sdt">012345678 </field>
+					 <field name="gender">nam</field>
+                     <field name="address">180 Cao Lỗ</field>
+		</record>
+	</data>
+</openerp>
