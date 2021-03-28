@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+    <data>
+	<!--quanlyns search view-->
+		<record model="ir.ui.view" id="view_quanlyns_search">
+			<field name="name">phongban.search</field>
+			<field name="model">quanlyns.phongban</field>
+			<field name="type">search</field>
+			<field name="arch" type="xml">
+				<search string="quanlyns Information Search">
+					<field name="ids" string="Mã phòng"/>
+					<field name="name" string="Tên Phòng"/>
+					
+				</search>
+			</field>
+		</record>
+		
+	<!--quanlyns tree view-->
+		<record model="ir.ui.view" id="view_quanlyns_tree">
+			<field name="name">phongban.tree</field>
+			<field name="model">quanlyns.phongban</field>
+			<field name="type">tree</field>
+			<field name="arch" type="xml">
+				<tree string="Danh sách phòng ban">
+					<field name="ids" />
+					<field name="name" />
+					
+				</tree>
+			</field>
+		</record>
+	
+	<!--quanlyns form view-->
+		<record model="ir.ui.view" id="view_quanlyns_form">
+			<field name="name">phongban.form</field>
+			<field name="model">quanlyns.phongban</field>
+			<field name="type">form</field>
+			<field name="arch" type="xml">
+				<form string="quanlyns">
+				<group>
+					<group>
+						<field name="ids" string="Mã phòng"/>
+					</group>
+					<group>
+						<field name="name" string="Tên Phòng"/>
+						
+					</group>
+				</group>
+				</form>
+			</field>
+		</record>
+		
+	<!--quanlyns Action-->
+		 <record model="ir.actions.act_window" id="action_quanlyns">
+            <field name="name">Thông tin chi tiết</field>
+            <field name="res_model">quanlyns.phongban</field>
+            <field name="view_type">form</field>
+            <field name="view_mode">tree,form</field>
+        </record>
+		
+		 <record model="ir.actions.act_window" id="action_quanlyns_tree">
+            <field name="name">Danh sách phòng ban</field>
+            <field name="res_model">quanlyns.phongban</field>
+            <field name="view_type">tree</field>
+            <field name="view_mode">tree</field>
+        </record>
+
+		<!--========================================-->
+	<!--quanlyns search view-->
+		<record model="ir.ui.view" id="view_quanlyns_search1">
+			<field name="name">quanlyns.search1</field>
+			<field name="model">quanlyns.quanlyns</field>
+			<field name="type">search</field>
+			<field name="arch" type="xml">
+				<search string="quanlyns Information Search">
+					<field name="manhanvien" string="Mã nhân viên"/>
+					<field name="tennhanvien" string="Tên nhân viên"/>
+					<field name="sdt" string="SĐT"/>
+					 <field name="gender" string="Giới tính"/>
+						<field name="phongban" string="Phòng ban"/>
+				</search>
+			</field>
+		</record>
+		
+	<!--quanlyns tree view-->
+		 <record model="ir.ui.view" id="view_quanlyns_tree1">
+			<field name="name">quanlyns.tree1</field>
+			<field name="model">quanlyns.quanlyns</field>
+			<field name="type">tree</field>
+			<field name="arch" type="xml">
+				<tree string="Danh sách nhân viên">
+					<field name="manhanvien" />
+					<field name="tennhanvien" />
+					<field name="sdt" />
+					 <field name="gender"/>
+					<field name="phongban" />
+					
+				</tree>
+			</field>
+		</record>
+	 
+	<!--quanlyns form view-->
+		<record model="ir.ui.view" id="view_quanlyns_form1">
+			<field name="name">quanlyns.form1</field>
+			<field name="model">quanlyns.quanlyns</field>
+			<field name="type">form</field>
+			<field name="arch" type="xml">
+				<form string="Thêm nhân viên">
+				<group>
+					<group>
+						<field name="manhanvien" string="Mã nhân viên"/>
+					</group>
+					<group>
+						<field name="tennhanvien" string="Tên nhân viên"/> 
+						 <field name="gender" string="Giới tính"/>
+						<field name="phongban" string="Phòng ban"/>
+					</group >
+					<group string="Thông tin liên lạc" >
+						<field name="sdt" string="SĐT"/>
+						<field name="address" string="Địa chỉ"/>
+					</group>	
+				</group>				
+				</form>
+			</field>
+		</record>
+		
+	<!--quanlyns Action-->
+		  <record model="ir.actions.act_window" id="action_quanlyns1">
+            <field name="name">Thông tin chi tiết</field>
+            <field name="res_model">quanlyns.quanlyns</field>
+            <field name="view_type">form</field>
+            <field name="view_mode">tree,form</field>
+        </record> 
+		
+		 <record model="ir.actions.act_window" id="action_quanlyns_tree1">
+            <field name="name">Danh sách nhân viên</field>
+            <field name="res_model">quanlyns.quanlyns</field>
+            <field name="view_type">tree</field>
+            <field name="view_mode">tree</field>
+        </record> 
+
+	</data>
+</openerp>

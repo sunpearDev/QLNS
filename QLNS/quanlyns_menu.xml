@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+    <data>
+	<!--quanlyns Menu-->
+		<menuitem id="quanlyns_parent" name="Quản lý nhân sự" icon="STOCK_OPEN"/>
+		<menuitem id="menu_quanlyns_parent" name="Phòng ban" parent="quanlyns_parent"/>
+		<menuitem action="action_quanlyns" id="menu_quanlyns_quanlyns" parent="menu_quanlyns_parent" string="Result"/>
+		<menuitem action="action_quanlyns_tree" name="Danh sách phòng ban" id="menu_quanlyns_tree" parent="menu_quanlyns_parent" string="List of quanlynss"/>
+		
+		<menuitem id="menu_quanlyns_parent1" name="Nhân viên" parent="quanlyns_parent"/>
+		<menuitem action="action_quanlyns1" id="menu_quanlyns_quanlyns1" parent="menu_quanlyns_parent1" string="Result"/>
+		<menuitem action="action_quanlyns_tree1" name="Danh sách nhân viên" id="menu_quanlyns_tree1" parent="menu_quanlyns_parent1" string="List of quanlynss"/> 
+		
+	</data>
+</openerp>
